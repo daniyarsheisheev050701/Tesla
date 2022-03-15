@@ -1,0 +1,412 @@
+
+
+body{
+  
+}
+
+
+
+.header-model-x {
+    background-image: url("/src/images/teslaxxx.jpg");
+    height: 110vh;
+    background-size: cover;
+}
+
+.tesla-xxx {
+    display: grid;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.speed {
+    display: flex;
+    position: absolute;
+    top: 56rem;
+    left: 25rem;
+    gap: 5rem;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    transform: translate3d(0px, 30px, 0);
+    opacity: 2;
+}
+
+.x-btn {
+    position: absolute;
+    left: 74rem;
+    padding: 8px 40px;
+    white-space: nowrap;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}   
+
+.x-btn:hover {
+    transition: 0.4s;
+    background-color: #fff;
+    color: #000;
+}
+
+.interior {
+
+    background-image: url('../../images/interier.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.inter h1{
+    background-color: #000;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding-left: 7px;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+    transform: translate3d(10px, 0px, 0);
+    opacity: 50%;
+}
+.inter h1.active{
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+}
+
+.monitors {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    
+}
+
+.mon {
+    background-color: #000;
+}
+.monitors {
+    align-items: center;
+}
+
+.monitors img {
+    width: 600px;
+    height: 300px;
+    margin-left: 25rem;
+}
+.text-xx h3 {
+    text-align: center;
+    margin-right: 15rem;
+}
+.text-xx p {
+    flex-wrap: wrap;
+    text-align: center;
+    /* margin-left: 5rem; */
+    margin-right: 25rem;
+    margin-left: 10rem;
+}
+.mon-2 {
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.mon-2 img {
+    width: 600px;
+    height: 300px;
+    margin-right: 25rem;
+}
+
+.text-mon-2  {
+    margin-left: 24rem;
+    margin-right: 8rem;
+}
+.text-mons {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+
+.text-mons img {
+    width: 600px;
+    height: 310px;
+    margin-left: 24rem;
+}
+
+.text-m h3 {
+    text-align: center;
+}
+
+.text-m {
+    margin-right: 23rem;
+    margin-left: 8rem;
+}
+
+.inner{
+    background-image: url('../../images/tesla-cars.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+
+}
+
+.logo-car {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 4rem;
+    gap: 11rem;
+    left: 40rem;
+}
+
+.logo-p {
+    position: absolute;
+    display: flex;
+    bottom: 1rem;
+    gap: 10rem;
+    left: 40rem;
+}
+.logo-p :nth-child(2) {
+    padding-left: 2rem;
+}
+.logo-inner {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.logo-text {
+    padding-left: 25rem;
+}
+.logo-text h3 {
+    white-space: nowrap;
+}
+
+.logo-inner p{
+    margin-left: 10rem;
+    margin-right: 20rem;
+}
+
+
+.btn-inner {
+    padding: 3px 3rem;
+    border-radius: 35px;
+    background-color: #fff;
+}
+
+.btn-inner:hover {
+    background-color: #000;
+    color: #fff;
+}
+.electric {
+    background-color: rgba(207, 207, 207, 0.452);
+}
+.text-elctric {
+    text-align: center;
+    margin-top: 3rem;
+    padding-left: 40rem;
+    padding-right: 40rem;
+}
+
+.mix {
+    background-image: url('../../images/mix-electric.jpg');
+    background-size: cover;
+    height: 60vh;
+    width: 60%;
+    margin-left: 25rem;
+}
+
+.box-10 {
+    width: 400px;
+    position: absolute;
+    top: 350rem;
+    right: 64rem;
+    flex-wrap: wrap;
+    background-color: rgba(197, 197, 197, 0.651);
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.box-10 h3 {
+    white-space: wrap;
+}
+
+.box-6 {
+    width: 400px;
+    position: absolute;
+    top: 350rem;
+    right: 35rem;
+    flex-wrap: wrap;
+    border-color: 10px ;
+    background-color: rgba(194, 194, 194, 0.651);
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.text-box-6 {
+    margin-top: 17rem;
+    margin-left: 50rem;
+}
+
+
+.box-66 .box-btn-x {
+    margin-top: 30rem;
+    padding: 5px 3rem;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.box-btn-x:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.7s;
+}
+.box-66 {
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.box-6x{
+    background-image: url('../../images/Capable.jpg');
+    height: 100vh;
+    width: 160vh;
+    
+    display: flex;
+    background-size: cover;
+}
+.box-6x p{
+    display: flex;
+    margin-top: 50rem;
+    color: #fff;
+    margin-left: 20rem;
+}
+
+.box-6x h3 {
+    display: flex;
+    margin-top: 50rem;
+    color: #fff;
+    margin-left: 20rem;
+}
+
+.box-6xxx{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.disigne-box {
+    background-image: url('../../images/disigne.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+
+.box-textt {
+    display: flex;
+    position: absolute;
+    bottom: 6rem;
+    color: #fff;
+    left: 40rem;
+    gap: 4rem;
+}
+
+.box-textt h3 {
+    position: absolute;
+    left: 23rem;
+    bottom: 2rem;
+}
+
+
+
+.satfey{
+    background-image: url('../../images/sfety.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vh;
+    padding-right: 90rem;
+}
+
+.safety-box {
+    display: flex;
+    position: relative;
+    margin-left: 3rem;
+}
+
+
+.safety-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 5px 3rem;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 8rem;
+}
+
+.safety-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.autopilot {
+    margin-left: 35rem;
+}
+
+.autopilot h1 {
+    white-space: nowrap;
+}
+
+.auto-boxxxs:active{
+    transform: translate3d(0px, 0, 0);
+    opacity: 99%;
+}
+.auto-boxxxs {
+    display: flex;
+    gap: 3rem;
+    justify-content: start;
+    padding-left: 7px;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+    transform: translate3d(0px, 30px, 0);
+    opacity: 99%;
+
+}
+
+.text-pp {
+    padding-right: 30rem;
+}
+
+.auto-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 5px 3rem;
+    border-radius: 50px;
+}
+
+.auto-btn:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.6s;
+}
+
+
+.video-auto {
+   
+}
+
+.safety-video {
+   margin-left: 20rem;
+   
+}
+
+
+@media(min-width:480px) and (max-width:1300px){
+    .speed{
+        display: none;
+    }
+    .box-10{
+        display: none;
+    }
+}

@@ -1,0 +1,101 @@
+
+
+.header-phone {
+    background-image: url("/src/img-model-y/modely1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.y{
+    display: flex;
+    justify-content: center;
+    padding-top: 50rem;
+    color: #fff;
+    gap: 1rem;
+    
+}
+.y p{
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.text-y{
+    position: absolute;
+    left: 60rem;
+    top:25rem;
+}
+.btn-y{
+    padding: 5px 3rem;
+    position: absolute;
+    right: 15rem;
+    bottom: 0rem;
+    border-radius: 50px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn-y:hover{
+    background-color: black;
+    color: #fff;
+
+}
+
+
+
+.text-utility{
+    display: flex;
+    justify-content: center;
+    margin-left: 30rem;
+    animation: 3s anim-lineUp ease-out ;
+}
+
+.text-utility::after{
+    animation: 3s anim-lineUp ease-out infinite ;
+}
+.text-utility::before{
+    animation: 3s anim-lineUp ease-out infinite ;
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+.text-utility h2{
+    white-space: nowrap;
+    /* animation: 2s anim-lineUp ease-out infinite; */
+}
+
+.text-util{
+    display: block;
+    gap: 3rem;
+}
+.text-utility p{
+    padding-left: 8rem;
+    padding-right: 30rem;
+    padding-left: 7px;
+    margin-bottom: 15px;
+    transition: all 1s ease-in-out;
+    transform: translate3d(0px, 30px, 0);
+    opacity: 1;
+
+}
+
+.text-utility p:active{
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+}

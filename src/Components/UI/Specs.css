@@ -1,0 +1,117 @@
+.setname{
+    display: flex;
+    color: #fff;
+    column-gap: 11rem;
+    padding-left: 2rem;
+}
+.setname h3{
+    font-size: 24px;
+    padding-top: 2rem;
+}
+.setname p{
+    font-size: 15px;
+}
+.setmenu{
+    display: flex;
+    color: #fff;
+    padding-left: 3rem;
+    gap: 13rem;
+}
+.setmenu h3{
+    font-size: 24px;
+    padding-top: 2rem;
+}
+
+.setmenu p{
+    font-size: 15px;
+}
+
+.btn-Specs:hover, .btn-Specs:focus{
+    color: #313133;
+  transform: translateY(-25px);
+}
+
+.btn-Specs{
+    margin-top: 20rem;
+    margin-left: 2rem;
+    border-radius: 50px;
+    background-color: black;
+    color: #fff;
+    border-color: #fff;
+    white-space: nowrap;
+    margin-right: 8rem;
+    min-width: 250px;
+min-height: 40px;
+font-family: 'Nunito', sans-serif;
+font-size: 22px;
+text-transform: uppercase;
+letter-spacing: 1.8px;
+font-weight: 300;
+color: #121225;
+background: #36a59a7c;
+background: linear-gradient(90deg, rgba(129, 230, 217, 0.918) 0%, rgba(91, 219, 206, 0.897) 100%);
+border: none;
+border-radius: 1000px;
+box-shadow: 17px 17px 28px rgba(79,209,197,.64);
+transition: all 0.3s ease-in-out 0.2s;
+cursor: pointer;
+outline: none;
+position: relative;
+}
+.btn-Specs:hover::before, .btn-Specs:focus::before {
+    opacity: 1;
+  }
+  .btn-Specs::before {
+    content: '';
+      border-radius: 1000px;
+      min-width: calc(300px + 12px);
+      min-height: calc(60px + 12px);
+      border: 6px solid #00FFCB;
+      box-shadow: 0 0 60px rgba(0,255,203,.64);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all .3s ease-in-out 0s;
+    }
+  .btn-Specs:hover, .btn-Specs:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-Specs::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .btn-Specs:hover::after, .btn-Specs:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }

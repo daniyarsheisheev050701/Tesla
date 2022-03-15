@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.corusel video {
+    height: 80vh;
+    width: 100%;
+    background-color: #000;
+    padding-top: 6rem;
+}
+
+.corusel button {
+
+}
+
