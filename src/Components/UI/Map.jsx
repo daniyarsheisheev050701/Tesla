@@ -3,9 +3,24 @@ import foto_1 from '../../images/mp2.png'
 import foto_2 from '../../images/mp5.png'
 import foto_3 from '../../images/mp3.png'
 import foto_4 from '../../images/mp4.png'
-import '../../Components/UI/Map.css'
+import '../../Components/UI/style.css/Map.css'
+import { motion } from 'framer-motion'
 
-
+const  variants ={
+  hidden: {
+    x: -200,
+    opacity: 0,
+    amount: 0.2
+  },
+  visible: {
+    x:3,
+    opacity:1,
+    amount: 0.2
+  },
+  viewport:{
+    amount: 0.2
+  }
+}
 
 function Map() {
     const [change, setChange] = useState(foto_1)
@@ -14,7 +29,9 @@ function Map() {
       setChange(change)
     }
     return (
-    <div>
+    <motion.div variants={variants}    initial="hidden"
+    whileInView="visible"
+    viewport={{ amount: 0.2}}>
        <div className='tex-mp'>
                 <h1>Freedom to Travel</h1>
                 <p>Enter a destination on your touchscreen and Trip Planner will automatically calculate your route with Superchargers along the way.</p>
@@ -32,7 +49,7 @@ function Map() {
         <section>
            
         </section>
-    </div>
+    </motion.div>
   )
 }
 

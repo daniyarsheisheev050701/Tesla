@@ -1,5 +1,5 @@
 import { Carousel } from 'bootstrap'
-import React from 'react'
+import React, { Component } from 'react'
 import "./style/Headset.css"
 import '../../src/Components/UI/Example'
 import Example from '../../src/Components/UI/Example'
@@ -7,18 +7,40 @@ import wolna__video from '../../src/video/wolna.webm'
 import jopa_video from '../../src/video/jopa-video.webm'
 import Map from '../../src/Components/UI/Map'
 import Specs from '../Components/UI/Specs'
-// import modal_s from  '../../src/images/interior-Modal-s.jpg'
+import { NavLink } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { motion } from 'framer-motion'
+const  variants ={
+  hidden: {
+    x: -200,
+    opacity: 0,
+    amount: 0.2
+  },
+  visible: {
+    x:3,
+    opacity:1,
+    amount: 0.2
+  },
+  viewport:{
+    amount: 0.2
+  }
+}
+
 function Headset() {
   return (
     <div>
-        <header className='header-item'>
+        <motion.header  className='header-item'
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.2}}
+        >
           <div className='text-model-s'>
-          <h1>
+          <motion.h1 variants={variants} className=''>
             Model S
-            </h1>
+            </motion.h1>
             <p>Plaid</p>
           </div>
-          <div className='text-model-s2'>
+          <motion.div variants={variants} className='text-model-s2'>
             <h3>396mi</h3>
             <span>Range (EPA est.)</span>
             <h3>1.99s</h3>
@@ -27,12 +49,15 @@ function Headset() {
             <span>Top Speed†</span>
             <h3>1,020hp</h3>
             <span>Peak Power</span>
-            <button className='model-s-btn'>ORDER NOW</button>
-          </div>
-        </header>
+            <button className='model-s-btn'> <NavLink to='/modelss'>ORDER NOW</NavLink></button>
+          </motion.div>
+        </motion.header>
         <section className='interior-model-s'>
           <div>
-            <h2>Interior of the Future</h2>
+            <motion.h2 variants={variants} 
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>Interior of the Future</motion.h2>
           </div>
         </section>
         <section className='img_modal_s'>
@@ -49,16 +74,22 @@ function Headset() {
         <div className='text-model-sss'>
           <div className='text-model-ss'>
           </div>
-          <div className='tex-h1'>
+        <motion.div variants={variants} className='tex-h1'
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2}}>
           <h1>Stay Connected</h1>
             <p>Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
-          </div>
+          </motion.div>
         </div>
         <div className='glavny-text'>
-        <div className='text-wolna'>
-          <h1>Immersive Sound</h1>
+        <motion.div variants={variants} className='text-wolna'
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2}}>
+          <h1 >Immersive Sound</h1>
           <p>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
-        </div>
+        </motion.div>
         <div className='vide-wolna'>
           <video autoPlay preload='auto' muted loop src={wolna__video}></video>
         </div>
@@ -69,53 +100,77 @@ function Headset() {
 
               </img>
           </div>
-          <div className='text-wolnaa'>
-            <h1>Room for Everything</h1>
+          <motion.div variants={variants} className='text-wolnaa'
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ amount: 0.2}}>
+            <h1 className=''>Room for Everything</h1>
             <p>With front and rear trunks and fold-flat seats you can fit
                your bike without taking the wheel off—and your luggage too.</p>
-          </div>
+          </motion.div>
         </div>
         </section>
-        <section>
-          <div className='img-wolna2'>
+        <motion.section variants={variants} >
+          <motion.div variants={variants} className='img-wolna2'>
 
-          </div>
-          <div className='class-wolna'>
+          </motion.div>
+          <motion.div variants={variants} className='class-wolna'>
           <div>
-            <h4>Exterior</h4>
-            <h1>Designed for Efficiency</h1>
-            <button className='wolna-btn'>ORDER NOW</button>
+            <motion.h4 variants={variants}
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>Exterior </motion.h4>
+            <motion.h1 variants={variants}
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>Designed for Efficiency</motion.h1>
+            <motion.button variants={variants} className='wolna-btn'
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>ORDER NOW</motion.button>
           </div>
           <div>
-            <p>With a drag coefficient of just .208 Cd, the lowest
+            <motion.p variants={variants}
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>With a drag coefficient of just .208 Cd, the lowest
                on the planet, Model S is built for speed, endurance
                 and range. Improved aerodynamics and a wider chassis
                  offer more responsive performance so you can take 
-                 corners quicker and with more confidence.</p>
+                 corners quicker and with more confidence.</motion.p>
           </div>
-          </div>
-        </section>
-        <section className='wolna-s'>
+          </motion.div>
+        </motion.section>
+        <motion.section variants={variants} className='wolna-s'
+         initial="hidden"
+         whileInView="visible"
+         viewport={{ amount: 0.2}}>
           <div className='text-wolna4'>
             <h3>Relentless Performance</h3>
             <p>Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.</p>
           </div>
           <div className='img-wolna3'>
           </div>
-        </section>
+        </motion.section>
         <section className='jopa'>
-        <div className='jopa-wolna'>
+        <motion.div variants={variants} className='jopa-wolna'
+         initial="hidden"
+         whileInView="visible"
+         viewport={{ amount: 0.2}}>
             <div className='img-jopa'>
             
             </div>
             <div className='p-jopa'>
-            <h3>Optimized Aerodynamics</h3>  
+            <h3  className='fadeUp'>Optimized Aerodynamics</h3>  
             <p>Attention to detail on all exterior surfaces makes Model 
               S the most aerodynamic production car on Earth.</p>  
             </div>            
-          </div>
+          </motion.div>
         </section>
-        <section className='jopa5-text'>
+        <motion.section variants={variants} className='jopa5-text'
+         initial="hidden"
+         whileInView="visible"
+         viewport={{ amount: 0.2}}>
           <div>
             <p>
             Refined Styling
@@ -125,12 +180,15 @@ function Headset() {
           <div className='jopa-5'>
 
           </div>
-        </section>
+        </motion.section>
         <section className='jopa8'>
           <div className='jopa-video'>
             <video autoPlay preload='auto' muted loop src={jopa_video}></video>
           </div>
-          <div className='jopa7-text'>
+          <motion.div variants={variants} className='jopa7-text'
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ amount: 0.2}}>
             <p>Range</p>
             <h1>Go Anywhere</h1>
             <p>Travel farther on a single charge than any 
@@ -140,7 +198,7 @@ function Headset() {
                 with Tesla fast charging technology, you’ll 
                 spend less time charging and even more time on the road.</p>
                 <button className='jopa-btn2'>ORDER NOW</button>
-          </div>
+          </motion.div>
         </section>
         <section>
          <Map/>

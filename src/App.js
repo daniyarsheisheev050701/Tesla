@@ -6,6 +6,7 @@ import Model_x from '../src/pages/Model_x'
 import Headset from './pages/Headset'
 import Header from './Components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Modelss from './Components/UI/Modelss';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <Route path='Headset' element={<Headset/>}/>
     <Route path='model_x' element={<Model_x/>}/>
     <Route path='Contacts' element={<Contacts/>}/>
+    <Route path='/modelss' element={<Modelss/>}/>
     </Routes>
     </BrowserRouter>
     

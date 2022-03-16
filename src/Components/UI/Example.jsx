@@ -1,6 +1,6 @@
 import React from 'react'
 import {Carousel} from 'react-bootstrap'
-import '../../Components/UI/Example.css'
+import '../../Components/UI/style.css/Example.css'
 import display_1 from '../../video/display_1.webm'
 import display_2 from '../../video/display_2.webm'
 import display_3 from '../../video/display_3.webm'

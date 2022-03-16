@@ -1,5 +1,5 @@
 import React, { useState } from 'react' 
-import '../../Components/UI/Specs.css'
+import '../../Components/UI/style.css/Specs.css'
 function Specs() {
     
     const [menu, setMenu] = useState()

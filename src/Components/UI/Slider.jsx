@@ -1,5 +1,5 @@
 import React from 'react'
-import './Slider.css'
+import './style.css/Slider.css'
 import {Carousel} from 'react-bootstrap'
 import interier from '../../images/ruuls_1.jpg'
 import rool from '../../images/ruuls_2.jpg'

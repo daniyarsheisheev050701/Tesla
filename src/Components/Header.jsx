@@ -1,8 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import "./Header.css"
-import { Dropdown } from 'react-bootstrap'
-
+import "./UI/style.css/Header.css"
 function Header() {
   return (
     <div className='bods'>

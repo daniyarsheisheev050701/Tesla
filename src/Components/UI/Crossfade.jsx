@@ -4,62 +4,29 @@ import video_1 from '../../video/video-1.webm'
 import video_2 from '../../video/video-2.webm'
 import video_3 from '../../video/video-3.webm'
 import video_4 from '../../video/video-4.webm'
-
-import '../../Components/UI/Crossfade.css'
+import '../../Components/UI/style.css/Crossfade.css'
 
 
 
 function Crossfade() {
-  // const [menu,setMenu] = useState ('')
-  // const [change, setChange] = useState()
-
-  // const buttons=() => {
-  //   setChange(
-
-  //   )
-  //   setChange(
-  //     <div>
-  //       <video autoPlay preload='auto' src={video_2}></video>
-  //     </div>
-  //   )
-    
-  // }
-  // const buton = () => {
-  //   setMenu (
-  //     <div>
-  //       <video autoPlay preload='auto' src={video_1}></video>
-  //     </div>
-  //   )
+  const [change, setChange] = useState(video_1)
+  const boton = () => {
+    setChange(change)
+  }
   return (
       <div>
-        {/* <div>
-          {setMenu}
-        </div>
         <div>
-          <button onClick={() => setChange(video_1)}>first</button>
-          <button onClick={() => setChange(video_2)}>second</button>
-          <button onClick={() => setChange(video_3)}>third</button>
-          <button onClick={() => setChange(video_4)}>fourth</button>
+        <div className='videouse'>
+          <video autoPlay preload='auto' muted loop src={change} alt="" />
         </div>
-        <div>
-        {change}
-        </div> */}
-        <div className='autopilots-video'>
-        <Carousel>
-      <Carousel.Item>
-       <video autoPlay preload='auto' muted loop src={video_1}></video>
-      </Carousel.Item>
-      <Carousel.Item>
-        <video autoPlay preload='auto' muted loop src={video_2}></video>
-      </Carousel.Item>
-      <Carousel.Item>
-       <video autoPlay preload='auto' muted loop src={video_3}></video>
-      </Carousel.Item>
-      <Carousel.Item>
-       <video autoPlay preload='auto' muted loop src={video_4}></video>
-      </Carousel.Item>
-    </Carousel>
         </div>
+        <div className='btn_css'>
+        <button className='btn_c' onClick={() => setChange(video_1)}><h6>San Francisco to Los Angeles</h6><p>383 miles</p></button>
+         <button className='btn_c' onClick={() => setChange(video_2)}><h6>Berkeley to Lake Tahoe</h6><p>178 miles</p></button>
+         <button className='btn_c' onClick={() => setChange(video_3)}><h6>Berkeley to Lake Tahoe</h6><p>178 miles</p></button>
+         <button className='btn_c' onClick={() => setChange(video_4)}><h6>Berkeley to Lake Tahoe</h6><p>178 miles</p></button> 
+        </div>
+       
     </div>
   )
 }
