@@ -1,22 +1,12 @@
 .bods {
-    /* padding: 0;
-    margin: 0 auto;
-    background-image: url('../images/jopa.jpg');
-    background-size: cover;
-    height: 30vh;
-    width: 100%;
-    box-sizing: border-box; */
-    margin: 0;
-    padding: 0;
     background-color: rgba(129, 111, 9, 0.356);
-    box-sizing: border-box;
 }
 
 .navbar {
     list-style: none;
     align-items: center;
     flex-wrap: nowrap; 
-    padding-top: 20rem; 
+    
     background: transparent;
      margin-right: 45rem; 
 }
@@ -26,6 +16,7 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+  flex-wrap: wrap;
   text-shadow:1px 0px rgba(rgba(107, 79, 0, 0.349),.4);
   color: rgba(119, 81, 0, 0.596);
   letter-spacing:.2em;
@@ -36,17 +27,12 @@
   border-radius: 5px;
 }
 
-/* .navbar :nth-child(2){
-    display: flex;
-    list-style: none;
-    align-items: center;
-    padding-left: 25rem;
-} */
 
 
 .tesla {
     cursor: pointer;
     font-family: 'Geostar', cursive;
+    flex-wrap: wrap;
     
 }
 

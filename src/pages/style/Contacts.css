@@ -99,3 +99,34 @@
     transform: translate3d(0px, 0, 0);
     opacity: 1;
 }
+
+.img-cloud{
+    background-image: url('../../model-sss/modelsyyy.jpg');
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    margin-top: 3rem;
+}
+.cloud{
+    display: flex;
+    justify-content: center;
+    padding-top: 50rem;
+    color: #fff;
+    font-size: 20px;
+}
+
+.cloud p{
+    width: 25%;
+}
+
+
+
+.viss{
+    display: flex;
+}
+
+
+.textpp{
+    padding-left: 7rem;
+    padding-top: 3rem;
+}

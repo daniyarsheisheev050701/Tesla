@@ -29,7 +29,8 @@ function Map() {
       setChange(change)
     }
     return (
-    <motion.div variants={variants}    initial="hidden"
+    <motion.div variants={variants}   
+     initial="hidden"
     whileInView="visible"
     viewport={{ amount: 0.2}}>
        <div className='tex-mp'>

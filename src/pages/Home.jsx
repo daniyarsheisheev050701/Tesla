@@ -1,51 +1,86 @@
 import React from 'react'
 import "./style/Home.css"
+import {motion, transform} from 'framer-motion'
+const  texAnimation ={
+  hidden: {
+    x: -200,
+    opacity: 0,
+    amount: 0.2
+  },
+  visible: {
+    x:10,
+    opacity:1,
+    amount: 0.2
+  },
+  viewport:{
+    amount: 0.2
+  }
+}
 function Home() {
   return (
     <div>
       <header className='header-inner'>
-          <div className='text'>
+          <motion.div variants={texAnimation} className='text'
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ amount: 0.2}}
+          >
             <h1>
             Model 3
             </h1>
             <p>Order Online for Touchless Delivery</p>
-          </div>
+          </motion.div>
       </header>
       <section className='tesla-y'>
-        <div className='tesla-text'>
+        <motion.div variants={texAnimation} className='tesla-text'
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>
           <h1>
           Model Y
           </h1>
           <p>Order Online for Touchless Delivery</p>
-        </div>
+        </motion.div>
       </section>
       <section>
         <div className='tesla-s'>
-          <div className='tesla-text-s'>
+          <motion.div variants={texAnimation} className='tesla-text-s'
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ amount: 0.2}}>
           <h1>Model S</h1>
           <p>Order Online for Touchless Delivery</p>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section>
         <div className='tesla-x'>
-          <div className='text-x'>
+          <motion.div variants={texAnimation} className='text-x'
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ amount: 0.2}}>
           <h1>Model X</h1>
           <p>Order Online for Touchless Delivery</p>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className='tesla-solar'>
-        <div className='tesla-solar-text'>
+        <motion.div variants={texAnimation} className='tesla-solar-text'
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>
           <h1>Solar Panels</h1>
           <p>Lowest Cost Solar Panels in America</p>
-        </div>
+        </motion.div>
       </section>
       <section className='tesla-roof'>
-        <div className='tesla-roof-text'>
+        <motion.div variants={texAnimation} className='tesla-roof-text'
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ amount: 0.2}}>
           <h1>Solar Roof</h1>
           <p>Produce Clean Energy From Your Roof</p>
-        </div>
+        </motion.div>
       </section>
     </div>
   )
