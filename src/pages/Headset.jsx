@@ -34,6 +34,9 @@ function Headset() {
         whileInView="visible"
         viewport={{ amount: 0.2}}
         >
+          <div className='img-headers'>
+             
+          </div>
           <div className='text-model-s'>
           <motion.h1 variants={variants} className=''>
             Model S
