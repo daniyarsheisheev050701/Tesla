@@ -113,12 +113,17 @@ body {
     gap: 9rem;
 }
 .text-wolna {
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.volnasstext p{
+    width: 70%;
+}
 .vide-wolna video {
     width: 60%;
     height: 70vh;
+    
 }
 
 .wolna-textxx {
@@ -201,6 +206,8 @@ body {
 
 .jopa-wolna{
     display: flex;
+    gap: 8rem;
+    justify-content: center;
 }
 
 .img-jopa{
@@ -209,16 +216,18 @@ body {
     height: 30vh;
     flex-wrap: wrap;
     width: 38%;
+    padding-left: 30rem;
 }
 .p-jopa{
-    width: 30%;
-    padding-left: 6rem;
-    padding-top: 6rem;
+    flex-wrap: wrap;
 }
 .jopa{
     background-color: #000;
     color: #fff;
-   padding-left: 23rem;
+   display: flex;
+   gap: 10rem;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .jopa-5{
@@ -227,6 +236,7 @@ body {
     height: 36vh;
     width: 30%;
     flex-wrap: wrap;
+    background-color: #000;
 }
 
 .jopa5-text{
@@ -336,4 +346,122 @@ body {
         color: #fff;
         text-decoration: none;
     }
+    .text-model-sss{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 0;
+    }
+    .imgss-wolna{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .glavny-text{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .img-wolna {
+        margin: 0;
+        width: 100%;
+    }
+    .text-model-ss{
+        margin: 1rem;
+        width: 100%;
+    }
+    .vide-wolna video{
+        margin: 0;
+        width: 100%;
+        position: absolute;
+    }
+    .wolna-textxx{
+        padding-left: 1rem;
+        padding-right: 3rem;
+        gap: 1rem;
+    }
+    .imgss-wolna{
+        height: 38vh;
+    }
+    .text-wolna .vide-wolna video{
+        width: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        justify-content: center;
+        display: grid;
+    }
+    .wolna-models{
+        display: grid;
+        position: relative;
+    }
+   .teeefsd{
+       padding-right: 7rem;
+       height: 0;
+   }
+   .wolna-s{
+       display: flex;
+       gap: 2rem;
+   }
+   .text-wolna4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    width: 100%;
+   }
+ .img-wolna3{
+     width: 100%;
+     height: 50vh;
+ }
+.jopa p{
+    width: 100%;
+}
+ .jopa{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+ }
+ .p-jopa{
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
+ .img-jopa{
+     width: 100%;
+    flex-wrap: wrap;
+     height: 50vh;
+ }
+ .jopa-wolna{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+ }
+ .jopa5-text{
+     display: flex;
+     flex-wrap: wrap;
+     padding-top: 2rem;
+ }
+ .class-wolna{
+    height: 50vh;
+ }
+ .jopa-5 {
+     width: 100%;
+     height: 50vh;
+     background-color: #000;
+ }
+ .jopa8{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .jopa-video video{
+     width: 100%;
+     height: 40vh;
+     background-size: cover;
+     position: relative;
+ }
+ .jopa-btn2{
+     position: absolute;
+     
+ }
 }

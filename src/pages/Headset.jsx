@@ -100,12 +100,15 @@ function Headset() {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.2}}>
-          <h1 >Immersive Sound</h1>
+            <div className='volnasstext'>
+            <h1 >Immersive Sound</h1>
           <p>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
-        </motion.div>
-        <div className='vide-wolna'>
+            </div>
+          <div className='vide-wolna'>
           <video autoPlay preload='auto' muted loop src={wolna__video}></video>
         </div>
+        </motion.div>
+       
         </div>
         <div className='wolna-textxx'>
           <div className='imgss-wolna'>
@@ -128,7 +131,7 @@ function Headset() {
 
           </motion.div>
           <motion.div variants={variants} className='class-wolna'>
-          <div>
+          <div className='teeefsd'>
             <motion.h4 variants={variants}
              initial="hidden"
              whileInView="visible"
