@@ -45,12 +45,12 @@ function Headset() {
           </div>
           <motion.div variants={variants} className='text-model-s2'>
             <h3>396mi</h3>
-            <span>Range (EPA est.)</span>
             <h3>1.99s</h3>
-            <span>0-60 mph*</span>
             <h3>200mph</h3>
+            <h3>1,020hp</h3><br />
+            <span>Range (EPA est.)</span>
+            <span>0-60 mph*</span>
             <span>Top Speed†</span>
-            <h3>1,020hp</h3>
             <span>Peak Power</span>
             <button className='model-s-btn'> <NavLink to='/modelss'>ORDER NOW</NavLink></button>
           </motion.div>

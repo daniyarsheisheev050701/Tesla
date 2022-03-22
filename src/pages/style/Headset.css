@@ -1,23 +1,19 @@
 body {
+
+}
+
+.header-item {
     margin: 0;
     padding: 0;
     background-image: url('../../images/model-s.jpg') ;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-
-.header-item {
-  
+    flex-wrap: nowrap;
     
    
 }
 
-.img-headers {
-  
-}
 
 .text-model-s{
     text-align: center;
@@ -26,15 +22,16 @@ body {
     flex-wrap: wrap;
     
 }
-
 .text-model-s2 {
-    display: block;
+    display: flex;
+    bottom: 0 ;
+    position: absolute;
     color: #fff;
-    justify-content: center;
-    margin-top: 35rem;
-    gap: 3rem;
+    left: 25%;
+    gap: 1rem;
     cursor: pointer;
 }
+
 .model-s-btn {
     background-color: #fff;
     color: #000;
@@ -326,21 +323,58 @@ body {
     }
 }
 
-@media (min-width:390px) and (max-width:480px){
+@media (min-width:360px) and (max-width:740px){
     .header-item{
-        background-size: contain;
+        background-image: url('../../model-sss/MS-Hero-Mobile.jpeg' ) ;
+        margin: 0;
+        padding: 0;
         background-repeat: no-repeat;
-        height: 200vh;
+        width: 100%;
+        height: 660px;
+        background-size:cover ;
+        flex-wrap: nowrap;  
+        flex-direction:row ;
+        top: 0;
         position: relative;
         
-        background-position: center center;
     }
-  
-    .img-headers img{
-        width: 100%;
-        flex-wrap: wrap;
+    .tesla {
+    
+        position: relative;
+        padding-right: 60px;
+        
+    }
+    .text-model-s2 {
+        position: relative;
+      
+        flex-direction: row;
+       justify-content: center;
+       text-align: justify;
+       gap: 60px;
+    }
+    .text-model-s2 h3 {
+        position: relative;
+        left: 62%;
+         top: 300px;
+         font-family: 'Audiowide', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+    }
+    .text-model-s2 span {
+        position: relative;
+        right: 94%;
+        flex-direction: ;
+         top: 350px;
+         font-family: 'Audiowide', cursive;
+         font-family: 'Oswald', sans-serif;
+         font-family: 'Rubik', sans-serif;
+         font-family: 'Share Tech Mono', monospace;
+        
+    }
+    
+    
 
-    }
+    
     .model-s-btn{
         position: absolute;
         top: 0;
