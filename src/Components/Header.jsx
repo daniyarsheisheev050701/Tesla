@@ -5,7 +5,10 @@ function Header() {
   return (
     <div className='bods'>
         <ul className='navbar'>
+          <li>
           <h1 className='tesla'><a href='/'>Tesla</a></h1>
+          </li>
+        
         <li>
           <NavLink to='/'>Home</NavLink>
         </li>

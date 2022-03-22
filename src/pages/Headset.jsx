@@ -9,6 +9,7 @@ import Map from '../../src/Components/UI/Map'
 import Specs from '../Components/UI/Specs'
 import { NavLink } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import imgsss from '../../src/images/model-s.jpg'
 import { motion } from 'framer-motion'
 const  variants ={
   hidden: {
@@ -34,6 +35,9 @@ function Headset() {
         whileInView="visible"
         viewport={{ amount: 0.2}}
         >
+          {/* <div>
+           <img src={imgsss}/>
+          </div> */}
           <div className='img-headers'>
              
           </div>
@@ -44,15 +48,21 @@ function Headset() {
             <p>Plaid</p>
           </div>
           <motion.div variants={variants} className='text-model-s2'>
-            <h3>396mi</h3>
+           <div className='h33'>
+           <h3>396mi</h3>
             <h3>1.99s</h3>
             <h3>200mph</h3>
             <h3>1,020hp</h3><br />
-            <span>Range (EPA est.)</span>
+           </div>
+           <div className='spans'>
+           <span>Range (EPA est.)</span>
             <span>0-60 mph*</span>
             <span>Top Speed†</span>
             <span>Peak Power</span>
-            <button className='model-s-btn'> <NavLink to='/modelss'>ORDER NOW</NavLink></button>
+           </div>  
+           <div>
+           <button className='model-s-btn'> <NavLink to='/modelss'>ORDER NOW</NavLink></button>
+             </div>   
           </motion.div>
         </motion.header>
         <section className='interior-model-s'>

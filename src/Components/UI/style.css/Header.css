@@ -1,66 +1,57 @@
 
 .navbar h1{
-    position:absolute ;
-    right: 1100px;
-   font-size: 25px;
-   font-family: 'Audiowide', cursive;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Share Tech Mono', monospace;
-
-   
+    font-size: 25px;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .navbar {
-    left: 500px;
     list-style: none;
     align-items: center;
-    flex-wrap: nowrap;
     position: absolute;
-    gap: 160px;
-    background: transparent;
-     margin-right: 45rem; 
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    display: grid;
 }
 .navbar a{
-    top: 30px;
+    
     text-decoration: none;
-    display: block;
   text-transform: uppercase;
   position: relative;
   z-index: 2;
-  flex-wrap: wrap;
-  
   color: black;
-  letter-spacing:.2em;
   text-decoration: none;
- position: absolute;
   transform-style: preserve-3d;
-  border-radius: 5px;
 }
 
 
 
-/* .tesla {
+.tesla {
     cursor: pointer;
     font-family: 'Geostar', cursive;
     flex-wrap: wrap;
     
-} */
+}
 
 
 
-@media  (min-width: 480px) and (max-width: 1800px){
-    .navbar a{
-       
-
-    }
+@media  (min-width: 480px) and (max-width: 550px){
+   
     .navbar{
-       
+       flex-wrap: wrap;
+       display: flex;
+       align-items: center;
     }
     .bods ul{
-        display: block;
-        align-items: center;
+       display: grid;
+       justify-content: center;
+       gap: 2rem;
+       padding-right: 10rem;
+    }
+    .navbar a{
         display: flex;
-        margin: 0;
-        padding: 0 5rem 0 0;
+        position: absolute;
+
     }
 }
