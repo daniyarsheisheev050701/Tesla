@@ -7,20 +7,30 @@ body {
 .carusel {
     display: flex;
     justify-content: center;
-    height: 70vh;
-    width: 60%;
-    padding-top: 4rem;
-    margin-left: 25rem;
+    height: 100vh;
+    width: 90%;
+    padding-top: 2rem;
     background-size: cover;
 }
 
 .glavny {
     background-color: black;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 .img-1 img {
     width: 100%;
 }
+@media (min-width:1049px) and (max-width: 1360px){
+    .glavny {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
 
+    
+}
 

@@ -35,9 +35,6 @@ function Headset() {
         whileInView="visible"
         viewport={{ amount: 0.2}}
         >
-          {/* <div>
-           <img src={imgsss}/>
-          </div> */}
           <div className='img-headers'>
              
           </div>
@@ -48,12 +45,15 @@ function Headset() {
             <p>Plaid</p>
           </div>
           <motion.div variants={variants} className='text-model-s2'>
-           <div className='h33'>
-           <h3>396mi</h3>
+           <div >
+             <div className='h33'>
+             <h3>396mi</h3>
             <h3>1.99s</h3>
             <h3>200mph</h3>
             <h3>1,020hp</h3><br />
+             </div>
            </div>
+           <div>
            <div className='spans'>
            <span>Range (EPA est.)</span>
             <span>0-60 mph*</span>
@@ -61,6 +61,7 @@ function Headset() {
             <span>Peak Power</span>
            </div>  
            <div>
+           </div>
            <button className='model-s-btn'> <NavLink to='/modelss'>ORDER NOW</NavLink></button>
              </div>   
           </motion.div>
@@ -95,19 +96,16 @@ function Headset() {
             <p>Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
           </motion.div>
         </div>
-        <div className='glavny-text'>
-        <motion.div variants={variants} className='text-wolna'
+        <div variants={variants} className='glavny-text'
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.2}}>
-            <div className='volnasstext'>
-            <h1 >Immersive Sound</h1>
-          <p>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
-            </div>
+        <div  className='text-wolna'>
+          <p> <h1 >Immersive Sound</h1>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
           <div className='vide-wolna'>
           <video autoPlay preload='auto' muted loop src={wolna__video}></video>
         </div>
-        </motion.div>
+        </div>
        
         </div>
         <div className='wolna-textxx'>

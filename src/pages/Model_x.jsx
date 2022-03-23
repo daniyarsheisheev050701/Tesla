@@ -62,6 +62,7 @@ function Model3() {
         </section>
         <section className='mon'>
           <div className='monitors'>
+            <div className='aaa'>
             <img src={monitor}/>
             <motion.div variants={variants} className='text-xx'
              initial="hidden"
@@ -71,6 +72,7 @@ function Model3() {
               <p>Up to 10 teraflops of processing power enables in-car gaming on-par with today’
                 s newest consoles. Wireless controller compatibility lets you game from any seat.</p>
             </motion.div>
+            </div>
           </div>
           <div className='mon-2'>
             <motion.div variants={variants} className='text-mon-2'
@@ -142,9 +144,12 @@ function Model3() {
                 pack thermal architecture allows faster charging and gives you
                  more power and endurance in all conditions.</p>
           </motion.div>
-         <section>
+          <div>
+          
+          </div>
+         <section className='bbbb'>
            <div>
-
+           <Electrik/>
            </div>
          </section>
         </section>
@@ -176,6 +181,7 @@ function Model3() {
           </div>
           <div>
           <div className='box-6x'>
+
                    <motion.h3 variants={variants}
                     initial="hidden"
                     whileInView="visible"
@@ -192,7 +198,7 @@ function Model3() {
           </div>
           </div>
           <section>
-            <Electrik/>
+            
           </section>
         </section>
         <section>
@@ -240,6 +246,7 @@ function Model3() {
           </div>
         </section>
         <section className='auto-boxxxs'>
+          <div className='cccc'>
           <motion.div variants={variants} className='autopilot'
            initial="hidden"
            whileInView="visible"
@@ -252,14 +259,18 @@ function Model3() {
            initial="hidden"
            whileInView="visible"
            viewport={{ amount: 0.2}}>
-          <p>Autopilot enables your car to steer,
+             <div>
+             <p>Autopilot enables your car to steer,
                  accelerate and brake automatically
                   within its lane under your active 
                   supervision, assisting with the most
                    burdensome parts of driving. With 
                    over-the-air software updates, the latest
                     enhancements are available instantly.</p>
+             </div>
           </motion.div>
+          </div>
+  
           </section>
           <section className='video-auto'>
          <Crossfade/>

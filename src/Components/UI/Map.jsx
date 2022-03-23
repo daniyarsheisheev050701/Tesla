@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import foto_1 from '../../images/mp2.png'
-import foto_2 from '../../images/mp5.png'
-import foto_3 from '../../images/mp3.png'
-import foto_4 from '../../images/mp4.png'
+import foto_1 from '../../images/mp11.png'
+import foto_2 from '../../images/mp12.png'
+import foto_3 from '../../images/mp13.png'
+import foto_4 from '../../images/mp14.png'
 import '../../Components/UI/style.css/Map.css'
 import { motion } from 'framer-motion'
 
@@ -37,7 +37,7 @@ function Map() {
                 <h1>Freedom to Travel</h1>
                 <p>Enter a destination on your touchscreen and Trip Planner will automatically calculate your route with Superchargers along the way.</p>
             </div>
-        <div>
+        <div className="img-map">
           <img src={change} alt="" />
         </div>
         <div className='btn_mather'>

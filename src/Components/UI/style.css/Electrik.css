@@ -1,12 +1,13 @@
 .imgs2{
-    width: 20rem;
+   display: flex;
+   justify-content: center;
 }
 
 .imgs2 img{
-    width: 500%;
-    height: 70vh;
+    width: 90%;
+    height: 90vh;
     display: flex;
-    padding-left: 23rem;
+    
     background-size: cover;
 }
 .imgs2 img:nth-child(1){

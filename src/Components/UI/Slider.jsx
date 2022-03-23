@@ -15,10 +15,6 @@ function Slider() {
       src={interier}
       alt="First slide"
     />
-    <Carousel.Caption>
-    <h3>17” Cinematic Display</h3>
-      <p>With 2200x1300 resolution, ultra bright, true colors and exceptional responsiveness, the new center display is the best screen to watch anywhere.</p>
-    </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item className='img-1'>
     <img
@@ -26,11 +22,6 @@ function Slider() {
       src={rool}
       alt="Second slide"
     />
-
-    <Carousel.Caption>
-      <h3>Focus on Driving</h3>
-      <p>The ultimate focus on driving: no stalks, no shifting. Model X is the best SUV to drive, and the best SUV to be driven in.</p>
-    </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item className='img-1'>
     <img
@@ -38,10 +29,6 @@ function Slider() {
       src={roolss}
       alt="Third slide"
     />
-    <Carousel.Caption>
-      <h3>Perfect Environment</h3>
-      <p>Clean, powerful yet invisible cabin conditioning. Tri-zone temperature controls, ventilated front seats and HEPA filtration come standard.</p>
-    </Carousel.Caption>
   </Carousel.Item>
 
   <Carousel.Item className='img-1'>
@@ -50,10 +37,6 @@ function Slider() {
       src={roolssss}
       alt="Third slide"
     />
-    <Carousel.Caption>
-      <h3>Spacious Cabin</h3>
-      <p>Model X offers a spacious cabin with the world's largest panoramic windshield and seating for up to seven.</p>
-    </Carousel.Caption>
   </Carousel.Item>
   </Carousel>
   

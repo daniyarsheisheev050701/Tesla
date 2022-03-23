@@ -22,24 +22,24 @@ body {
     
 }
 .text-model-s2 {
-  display: grid;
-  justify-content: center;
-  padding-top: 32rem;
-  color: #fff;
-  gap: 1rem;
-}
-
-.h33{
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+    gap: 1rem;
+    padding-top: 15rem;
 }
 .spans{
     display: flex;
     gap: 2rem;
 }
+.h33{
+    gap: 2rem;
+    display: flex;
+}
 
 .model-s-btn a{
     text-decoration: none;
+    color: #000;
 }
 
 .model-s-btn {
@@ -106,23 +106,27 @@ body {
     color: #fff;
     flex-wrap: wrap;
 }
-.glavny-text {
-    display: flex;
-    align-items: center;
-    margin-left: 20rem;
-    gap: 9rem;
-}
+
 .text-wolna {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-.volnasstext p{
-    width: 70%;
+
+.text-wolna p{
+    padding-left: 10rem;
+    width: 50%;
+    
 }
 .vide-wolna video {
     width: 60%;
-    height: 70vh;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -156,17 +160,17 @@ body {
 .class-wolna {
     display: flex;
     justify-content: center;
-    padding-left: 30rem;
-    gap: 13rem;
+    padding-left: 17rem;
     align-items: center;
     background-color: #000;
     color: #fff;
+    gap: 2rem;
 }
 .class-wolna h1 {
     white-space: nowrap;
 }
 .class-wolna p{
-    width: 60%;
+    width: 80%;
 }
 
 .wolna-btn {
@@ -196,6 +200,7 @@ body {
     justify-content: center;
     background-color: #000;
     color: #fff;
+    gap: 1rem;
     align-items: center;
     padding-top: 7rem;
     flex-wrap: wrap;
@@ -208,15 +213,15 @@ body {
     display: flex;
     gap: 8rem;
     justify-content: center;
+    align-items: center;
 }
 
 .img-jopa{
     background-image: url('../../images/jopa-wolna.jpg');
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     flex-wrap: wrap;
-    width: 38%;
-    padding-left: 30rem;
+    width: 100%;
 }
 .p-jopa{
     flex-wrap: wrap;
@@ -225,15 +230,16 @@ body {
     background-color: #000;
     color: #fff;
    display: flex;
-   gap: 10rem;
+   gap: 8rem;
    flex-wrap: wrap;
+   align-items: center;
    justify-content: center;
 }
 
 .jopa-5{
     background-image: url('../../images/jopa2.jpg');
     background-size: cover;
-    height: 36vh;
+    height: 40vh;
     width: 30%;
     flex-wrap: wrap;
     background-color: #000;
@@ -245,7 +251,7 @@ body {
     align-items: center;
     color: #fff;
     justify-content: center;
-    gap: 10rem;
+    gap: 4rem;
 
 }
 
@@ -284,24 +290,139 @@ body {
     margin-top: 6rem;
     background-image: url('../../images/toolbar.jpg');
     height: 75vh;
-    width: 50%;
+    width: 100%;
     background-size: cover;
     flex-wrap: wrap;
-    margin-right: 20rem
 }
 
 .toolbar-inner{
     background-color: #000;
-    height: 100vh;
     display: flex;
     margin-top: 3rem;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
     white-space: nowrap;
     text-align: center;
     
 }
+@media (min-width:1024px) and (max-width: 1360px){
+    
+.text-model-s2{
+    padding: 0;
+    padding-top: 12rem;
+    padding-left: 19rem;
+    position: absolute;
+}
+.wolna-models{
+    margin: 0;
+    padding: 0;
 
+}
+.text-model-ss{
+    margin: 0;
+    padding: 0;
+}
+.text-model-sss{
+    display: flex;
+    justify-content: center;
+}
+
+.text-wolna{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.wolna-textxx{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+.imgss-wolna{
+    margin: 0;
+    padding: 0;
+}
+
+.teeefsd{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    padding-left: 2rem;
+}
+.class-wolna{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.wolna-s{
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    justify-content: center; 
+    gap: 9rem;
+}
+.img-wolna3{
+    width: 35%;
+}
+
+.text-wolna4{
+    margin: 0;
+    padding: 0
+}
+
+.jopa-wolna{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.img-jopa{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+}
+
+
+.jopa5-text{
+    display: flex;
+    gap: 7rem;
+}
+
+
+.jopa7-text{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.jopa-btn2{
+    margin: 0;
+    position: absolute;
+    right: 1rem;
+    padding: 5px 20px;
+}
+
+
+
+
+.toolbar-inner{
+    background-color: #000;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 5rem;
+    white-space: nowrap;
+    text-align: center;
+    
+}
+}   
 
 @media (min-width:480px) and (max-width:550px){
     .header-item{ 
@@ -334,8 +455,6 @@ body {
        display: flex;
        padding-top: 18rem;
        gap: 2rem;
-       padding-left: rem;
-       padding-right: rem;
        flex-wrap: wrap;
     }
     .model-s-btn a{
